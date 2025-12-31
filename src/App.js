@@ -1198,7 +1198,7 @@ const achievements = [
                 icon: <Linkedin />,
                 label: "LinkedIn",
                 value: "Jaydeep Balde",
-                href: "https://www.linkedin.com/in/jaydeep-balde-220a43204/"
+                href: "https://www.linkedin.com/in/jaydeep-b-220a43204/"
               }
             ].map((contact, index) => (
               <a
