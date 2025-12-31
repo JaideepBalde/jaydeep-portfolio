@@ -551,114 +551,114 @@ const achievements = [
         </motion.div>
       </section>
 
-      {/* ABOUT SECTION */}
-      <section id="about" className="py-24 px-6 relative">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
-            <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto" />
-          </motion.div>
+     {/* ABOUT SECTION */}
+<section id="about" className="py-24 px-6 relative">
+  <div className="max-w-6xl mx-auto">
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <p className="text-lg text-slate-300 leading-relaxed">
-  I am a backend-focused engineering graduate with hands-on experience in building and
-  deploying RESTful APIs using Node.js, Express, and relational and NoSQL databases.
-  I enjoy working close to the system layer—designing clean backend structures,
-  handling data flow, and ensuring APIs behave predictably and securely.
-</p>
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="text-center mb-16"
+    >
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
+      <div className="w-20 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto" />
+    </motion.div>
 
-<p className="text-lg text-slate-300 leading-relaxed">
-  Through academic and self-driven projects, I have worked on database design,
-  request validation, error handling, and containerized deployments using Docker.
-  I am comfortable testing APIs, analyzing logs, and understanding how backend
-  systems behave in real-world, internet-facing environments.
-</p>
+    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-<p className="text-lg text-slate-300 leading-relaxed">
-  I value clarity, maintainability, and process-driven development. I believe reliable
-  software comes from understanding system behavior, following structured workflows,
-  and continuously improving through learning, feedback, and practical exposure.
-</p>
+      {/* LEFT COLUMN */}
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="space-y-6"
+      >
+        <p className="text-lg text-slate-300 leading-relaxed">
+          I am a backend-focused engineering graduate with hands-on experience in building
+          and deploying RESTful APIs using Node.js, Express, and relational and NoSQL databases.
+          I enjoy working close to the system layer—designing clean backend structures,
+          handling data flow, and ensuring APIs behave predictably and securely.
+        </p>
 
+        <p className="text-lg text-slate-300 leading-relaxed">
+          Through academic and self-driven projects, I have worked on database design,
+          request validation, error handling, and containerized deployments using Docker.
+          I am comfortable testing APIs, analyzing logs, and understanding how backend
+          systems behave in real-world, internet-facing environments.
+        </p>
 
-              <div className="grid grid-cols-2 gap-6 pt-6">
-                {[
-                  { icon: <Code2 />, label: "Clean Code" },
-                  { icon: <Layers />, label: "Scalable Systems" },
-                  { icon: <Activity />, label: "Performance" },
-                  { icon: <ShieldCheck />, label: "Security First" }
-                ].map((item) => (
-                  <div key={item.label} className="flex items-center gap-3">
-                    <div className="text-indigo-400">{item.icon}</div>
-                    <span className="text-slate-300">{item.label}</span>
-                  </div>
-                ))}
+        <p className="text-lg text-slate-300 leading-relaxed">
+          I value clarity, maintainability, and process-driven development. I believe reliable
+          software comes from understanding system behavior, following structured workflows,
+          and continuously improving through learning and practical exposure.
+        </p>
+
+        <div className="grid grid-cols-2 gap-6 pt-6">
+          {[
+            { icon: <Code2 />, label: "Clean Code" },
+            { icon: <Layers />, label: "Scalable Systems" },
+            { icon: <Activity />, label: "Performance Awareness" },
+            { icon: <ShieldCheck />, label: "Security Mindset" }
+          ].map((item) => (
+            <div key={item.label} className="flex items-center gap-3">
+              <div className="text-indigo-400">{item.icon}</div>
+              <span className="text-slate-300">{item.label}</span>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+
+      {/* RIGHT COLUMN */}
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="space-y-6"
+      >
+
+        {/* QUICK STATS (GENUINE) */}
+        <div className="rounded-2xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 p-8">
+          <h3 className="text-2xl font-semibold mb-6">Quick Stats</h3>
+          <div className="space-y-4">
+            {[
+              { label: "Backend Projects", value: "5+" },
+              { label: "APIs Built", value: "15+" },
+              { label: "Databases Used", value: "MongoDB & MySQL" },
+              { label: "Deployment Experience", value: "Docker & CI/CD" }
+            ].map((stat) => (
+              <div key={stat.label} className="flex justify-between items-center">
+                <span className="text-slate-400">{stat.label}</span>
+                <span className="text-lg font-semibold text-indigo-400">{stat.value}</span>
               </div>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="rounded-2xl bg-gradient-to-br from-indigo-500/10 to-purple-500/10 border border-indigo-500/20 p-8">
-                <h3 className="text-2xl font-semibold mb-6">Quick Stats</h3>
-                <div className="space-y-4">
-                  {[
-                    { label: "Years of Experience", value: "3+" },
-                    { label: "Projects Completed", value: "50+" },
-                    { label: "Lines of Code", value: "100K+" },
-                    { label: "Coffee Consumed", value: "∞" }
-                  ].map((stat) => (
-                    <div key={stat.label} className="flex justify-between items-center">
-                      <span className="text-slate-400">{stat.label}</span>
-                      <span className="text-2xl font-bold text-indigo-400">{stat.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-         <div className="rounded-2xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8">
-  <h3 className="text-2xl font-semibold mb-4">Education</h3>
-
-  <div className="flex items-start gap-4">
-    <GraduationCap className="w-6 h-6 text-purple-400 mt-1" />
-    <div>
-      <p className="font-medium">
-        Bachelor of Technology in Electronics and Telecommunication Engineering
-      </p>
-
-      <p className="text-slate-300 text-sm">
-        Bharatiya Vidya Bhavan’s Sardar Patel Institute of Technology, Mumbai
-      </p>
-
-      <p className="text-slate-400 text-sm">
-        University of Mumbai • 2021–2025
-      </p>
-    </div>
-  </div>
-</div>
-
-                    
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+            ))}
           </div>
         </div>
-      </section>
+
+        {/* EDUCATION */}
+        <div className="rounded-2xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8">
+          <h3 className="text-2xl font-semibold mb-4">Education</h3>
+
+          <div className="flex items-start gap-4">
+            <GraduationCap className="w-6 h-6 text-purple-400 mt-1" />
+            <div>
+              <p className="font-medium">
+                Bachelor of Technology in Electronics and Telecommunication Engineering
+              </p>
+              <p className="text-slate-300 text-sm">
+                Bharatiya Vidya Bhavan’s Sardar Patel Institute of Technology, Mumbai
+              </p>
+              <p className="text-slate-400 text-sm">
+                University of Mumbai • 2021–2025
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </motion.div>
+    </div>
+  </div>
+</section>
 
       {/* ENGINEERING APPROACH SECTION */}
       <section className="py-24 px-6 relative">
