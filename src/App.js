@@ -630,13 +630,27 @@ const achievements = [
                 </div>
               </div>
 
-              <div className="rounded-2xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8">
-                <h3 className="text-2xl font-semibold mb-4">Education</h3>
-                <div className="flex items-start gap-4">
-                  <GraduationCap className="w-6 h-6 text-purple-400 mt-1" />
-                  <div>
-                    <p className="font-medium">Bachelor of Technology Electronics and Telecommunication Engineering</p>
-                    <p className="text-slate-400 text-sm">University Of Mumbai • 2021-2025</p>
+         <div className="rounded-2xl bg-gradient-to-br from-purple-500/10 to-pink-500/10 border border-purple-500/20 p-8">
+  <h3 className="text-2xl font-semibold mb-4">Education</h3>
+
+  <div className="flex items-start gap-4">
+    <GraduationCap className="w-6 h-6 text-purple-400 mt-1" />
+    <div>
+      <p className="font-medium">
+        Bachelor of Technology in Electronics and Telecommunication Engineering
+      </p>
+
+      <p className="text-slate-300 text-sm">
+        Bharatiya Vidya Bhavan’s Sardar Patel Institute of Technology, Mumbai
+      </p>
+
+      <p className="text-slate-400 text-sm">
+        University of Mumbai • 2021–2025
+      </p>
+    </div>
+  </div>
+</div>
+
                     
                   </div>
                 </div>
